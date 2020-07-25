@@ -15,8 +15,12 @@ class MoviesTable extends Component {
                          onClick={() => this.props.onLike(movie)} />) },
         { key: 'delete', 
           content: movie => (<button onClick={() => this.props.onDelete(movie)} 
-                           className="btn btn-danger btn-sm">Delete</button>) }
-    ]
+                                     className="btn btn-danger btn-sm">
+                             Delete
+                             </button>
+                            ) 
+        }
+    ];
     
     render() { 
         const { movies, sortColumn, onSort } = this.props;
